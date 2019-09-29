@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  background: #1f1f1f;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #262627;
+  color: #fff;
+  height: 300px;
+  margin: 10px;
+  padding: 20px;
+  cursor: pointer;
+  text-align: justify;
+  width: 300px;
+}
+
+.gradient-box {
+  background-clip: padding-box;
+  border: 2px solid transparent;
+  position: relative;
+
+  > .gradient-border {
+    bottom: 0;
+    left: 0;
+    margin: -2px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  &:hover > .gradient-border {
+    background: rgba(230, 230, 230, 0.8) !important;
+  }
+}
